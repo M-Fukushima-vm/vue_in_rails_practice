@@ -1,0 +1,15 @@
+current directory: /Users/M/projects/vue_in_rails_practice/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.7.4/ext/bootsnap
+/Users/M/.rbenv/versions/2.7.1/bin/ruby -I /Users/M/.rbenv/versions/2.7.1/lib/ruby/2.7.0 -r ./siteconf20210427-18135-146hhyc.rb extconf.rb
+creating Makefile
+
+current directory: /Users/M/projects/vue_in_rails_practice/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.7.4/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/M/projects/vue_in_rails_practice/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.7.4/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/M/projects/vue_in_rails_practice/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.7.4/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20210427-18135-1b281nx/bootsnap
