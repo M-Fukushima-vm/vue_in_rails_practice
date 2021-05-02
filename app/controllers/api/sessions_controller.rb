@@ -18,7 +18,10 @@ class Api::SessionsController < ApplicationController
       # 登録確認できたuserデータのうち
       # app/serializers/user_serializer.rb でattributesした情報で
       # json形式のserializerインスタンスを生成して、jsonで返す
-      render json: ActiveModelSerializers::SerializableResource.new(user, serializer: UserSerializer).as_json.merge(token: token), status: :created
+      render json: { user: ActiveModelSerializers::SerializableResource.new(user, adapter: :attributes), token: token }, status: :created
+        # 作成した config/initialozers/active_model_serializer.rb (設定ファイル)
+        # での、ハッシュの中身だけ用いる記載 => adapter: :attributes
+
     # 登録ユーザーである確認ができない場合
     else
       # jsonで message と unauthorizedステータス を返す
